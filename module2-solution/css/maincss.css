@@ -1,13 +1,66 @@
 /* base css style */
 /*Desktop version*/
+*{
+	box-sizing:border-box;
+	text-align: center;
+	font-family: Fixed, monospace;
+	font-size: 1em;
+}
+.row{
+	width: 100%;
 
+}
+p{
+	margin:4px;
+	height: 80px;
+ 	padding: 22px 2px 2px 2px;
+ 	background-color: gray;
+	border: 1px solid black;
+	border-radius: 1em;
+	color: white;
+}
+section{
+	margin: auto;
+	position: relative;
+}
+h3{
+	margin-top: 4px;/*i over-write the margin cause h3 tag has allready a margin*/
+	border: 2px solid black;/*the border is on porpose to overlap the border of the p tag*/
+	height: 25px;
+	position: absolute;/*position is absolute to a relative parent*/
+	width: 30%;/*i used the same logic with the grid*/
+	right: 4px;/*4pixels because of the margin of the paragraph (parent)*/
+	
+}
+.pink{background-color: pink;}
+.yellow{background-color: yellow;}
+.red{background-color: red;}
+.column-4, .column-12{
+	float: left;
+}
+.column-4{width: 33%;}
 
 
 /*Tablet version*/
-@media (min-width: 768px)and(max-width: 991px){
-
+@media (min-width: 768px) and (max-width: 991px){
+	*{
+		font-family: New Century Schoolbook, serif;/*i am changing the font just for fun*/
+		font-size: 1.03em;
+	}
+	.column-4{
+		width: 50%;
+	}
+	.column-12{
+		width: 100%;
+	}
 }
 /*Mobile version*/
 @media (max-width: 767px){
-	
+	*{
+		font-family: New Century Schoolbook, serif;
+		font-size: 1.03em;
+	}
+	.column-4{
+		width: 100%;
+	}
 }
