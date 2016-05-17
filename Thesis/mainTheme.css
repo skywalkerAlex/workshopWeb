@@ -1,0 +1,31 @@
+
+/*-- navigation menu THEME --*/
+.red:hover{
+	border-bottom:5px solid rgb(255, 26, 26);
+}
+.orange:hover{
+	border-bottom:5px solid rgb(255, 140, 26)
+}
+.blue:hover{
+	border-bottom:5px solid rgb(0, 191, 255);
+}
+.green:hover{
+	border-bottom:5px solid rgb(51, 204, 51);
+}
+
+.activehome{
+	background-color: rgba(51, 204, 51, 0.6);
+}
+.activekwdikoi{
+	background-color: rgba(255, 26, 26, 0.6);
+}
+.activelabels{
+	background-color: rgba(255, 140, 26, 0.6);
+}
+.activedefault{
+	background-color: rgba(0, 191, 255, 0.6);
+}
+
+.modal-footer:hover{
+	box-shadow: 0 6px 10px rgb(51, 204, 51);
+}
